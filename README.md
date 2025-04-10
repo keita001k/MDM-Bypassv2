@@ -24,7 +24,7 @@
 
 4. Enter Recovery Mode & Open Safari.
 
-5. Navigate to https://www.github.com/assafdori/bypass-mdm
+5. Navigate to https://github.com/keita001k/MDM-Bypassv2/
 
 6. Copy the script below:
 
@@ -59,3 +59,5 @@ curl https://raw.githubusercontent.com/assafdori/bypass-mdm/main/bypass-mdm.sh -
 19. Congratulations, you're MDM free! 💫
 
 ###### Although it's virtually impossible to catch that you've removed the MDM (because it wasn't even configured), be aware that the serial number of the laptop will still be shown in the inventory system of your company. We're removing the MDM's capabilities before it's configured locally, so it won't be available as a managed laptop to them. Use with caution. Probably a good idea to have a valid excuse as well.
+
+All Credits Goes to https://github.com/assafdori/
