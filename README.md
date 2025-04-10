@@ -1,55 +1,61 @@
-Bypass-MDM for MacOS 💻 
-[mdm-screen](https://github.com/user-attachments/assets/29b45eb4-2a83-4c18-bc3f-4d6a6286bf84)
+# Bypass-MDM for MacOS 💻
+
+![mdm-screen](https://raw.githubusercontent.com/assafdori/bypass-mdm/main/mdm-screen.png)
+
+#### Prerequisites ⚠️
+
+- **It is advised to erase the hard-drive prior to starting.**
+- **It is advised to re-install MacOS using an external flash drive.**
+- **Device language needs to be set to English, it can be changed afterwards.**
 
 
+#### Follow steps below to bypass MDM setup during a fresh installation of MacOS
 
-Prerequisites ⚠️
-It is advised to erase the hard-drive prior to starting.
-It is advised to re-install MacOS using an external flash drive.
-Device language needs to be set to English, it can be changed afterwards.
-Follow steps below to bypass MDM setup during a fresh installation of MacOS
-Upon arriving to the setup stage of forced MDM enrollement:
+> Upon arriving to the setup stage of forced MDM enrollement:
 
-Long press Power button to forcefully shut down your Mac.
+1. Long press Power button to forcefully shut down your Mac.
 
-Hold the power button to start your Mac & boot into recovery mode.
+2. Hold the power button to start your Mac & boot into recovery mode.
 
-a. Apple-based Mac: Hold Power button.
-b. Intel-based Mac: Hold CMD + R during boot.
+> a. **Apple-based Mac**: Hold Power button.\
+> b. **Intel-based Mac**: Hold <kbd>CMD</kbd> + <kbd>R</kbd> during boot.
 
-Connect to WiFi to activate your Mac.
+3. Connect to WiFi to activate your Mac.
 
-Enter Recovery Mode & Open Safari.
+4. Enter Recovery Mode & Open Safari.
 
-Navigate to https://www.github.com/assafdori/bypass-mdm
+5. Navigate to https://www.github.com/assafdori/bypass-mdm
 
-Copy the script below:
+6. Copy the script below:
 
+```zsh
 curl https://raw.githubusercontent.com/assafdori/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
-Launch Terminal (Utilities > Terminal).
+```
 
-Paste (CMD + V) and Run the script (ENTER).
+7. Launch Terminal (Utilities > Terminal).
 
-Input 1 for Autobypass.
+8. Paste (<kbd>CMD</kbd> + <kbd>V</kbd>) and Run the script (<kbd>ENTER</kbd>).
 
-Press Enter to leave the default username 'Apple'.
+9. Input 1 for Autobypass.
 
-Press Enter to leave the default password '1234'.
+10. Press Enter to leave the default username 'Apple'.
 
-Wait for the script to finish & Reboot your Mac.
+11. Press Enter to leave the default  password '1234'.
 
-Sign in with user (Apple) & password (1234)
+12. Wait for the script to finish & Reboot your Mac.
 
-Skip all setup (Apple ID, Siri, Touch ID, Location Services)
+13. Sign in with user (Apple) & password (1234)
 
-Once on the desktop navigate to System Settings > Users and Groups, and create your real Admin account.
+14. Skip all setup (Apple ID, Siri, Touch ID, Location Services)
 
-Log out of the Apple profile, and sign in into your real profile.
+15. Once on the desktop navigate to System Settings > Users and Groups, and create your real Admin account.
 
-Feel free set up properly now (Apple ID, Siri, Touch ID, Location Services).
+16. Log out of the Apple profile, and sign in into your real profile.
 
-Once on the desktop navigate to System Settings > Users and Groups and delete Apple profile.
+17. Feel free set up properly now (Apple ID, Siri, Touch ID, Location Services).
 
-Congratulations, you're MDM free! 💫
+18. Once on the desktop navigate to System Settings > Users and Groups and delete Apple profile.
 
-Although it's virtually impossible to catch that you've removed the MDM (because it wasn't even configured), be aware that the serial number of the laptop will still be shown in the inventory system of your company. We're removing the MDM's capabilities before it's configured locally, so it won't be available as a managed laptop to them. Use with caution. Probably a good idea to have a valid excuse as well.
+19. Congratulations, you're MDM free! 💫
+
+###### Although it's virtually impossible to catch that you've removed the MDM (because it wasn't even configured), be aware that the serial number of the laptop will still be shown in the inventory system of your company. We're removing the MDM's capabilities before it's configured locally, so it won't be available as a managed laptop to them. Use with caution. Probably a good idea to have a valid excuse as well.
